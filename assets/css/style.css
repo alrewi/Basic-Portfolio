@@ -49,7 +49,7 @@ Main Content Area
 ====================
 */
 .container {
-    background: url(/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/skulls.png);
+    background: url("../images/skulls.png");
 }
 .content-area {
     width: 960px;
@@ -96,23 +96,22 @@ Portfolio
     height: 150px;
     width: 200px;
     background-color: #ffffff;
+    background-repeat: no-repeat;
 }
 #game1 {
     background-image: url("../images/blades.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 #game2 {
-    background-image: url("../assets/images/drop.jpg");
+    background-image: url("../images/drop.jpg");
 }
 #game3 {
-    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/flower.jpg");
+    background-image: url("../images/flower.jpg");
 }
 #game4 {
-    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/sunset.jpg");
+    background-image: url("../images/sunset.jpg");
 }
 #game5 {
-    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/surf.jpg");
+    background-image: url("../images/surf.jpg");
 }   
 .game-title {
     height: 25%;
@@ -121,6 +120,19 @@ Portfolio
     color: #ffffff;
     text-align: center;
     padding-top: 18px;
+}
+/*
+====================
+Contact
+====================
+*/
+.form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+#submit-btn {
+    background-color: #4aaaa5;
+    color: #ffffff;
 }
 /*
 ====================
