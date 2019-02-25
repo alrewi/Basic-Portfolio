@@ -1,12 +1,15 @@
 /* 
 ====================
-Header 
+Fixed Header 
 ====================
 */
 .main-header {
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
-    height: 100px
+    height: 88px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .clearfix::after {
     content: "";
@@ -21,17 +24,17 @@ Header
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-decoration: none;
     float: left;
-    margin: 34px 590px 0 180px;
+    margin: 0 590px 0 180px;
     width: 230px;
 }
 .nav-bar {
     float: left;
-    margin-top: 65px;
+    margin: 27px 0 27px 0;
     width: 140px;
 }
 .nav-but {
     text-decoration: none;
-    color: #cccccc;
+    color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 12px;
 }
@@ -46,49 +49,103 @@ Main Content Area
 ====================
 */
 .container {
-    background-image: url('assets/images/tiny-squares.png');
+    background: url(/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/skulls.png);
 }
-
-/*
-====================
-Bio
-====================
-*/
 .content-area {
-    height: 500px;
     width: 960px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    padding: 20px;
-    margin: 20px 180px 50px 180px;
+    padding: 0 20px 20px 20px;
+    margin: 120px 180px 50px 180px;
 }
-#about-me {
+.page-heading {
     color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
-    padding-bottom: 15px;
-}
-#bio {
-    border-top: 2px solid #cccccc;
-    line-height: 1.5;
-}
-#my-photo {
-    float: left;
-    padding: 20px 20px 0 0;
+    padding: 0 0 20px 0;
 }
 /*
 ====================
-Footer
+About Me
 ====================
 */
+#bio {
+    line-height: 1.5;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+#my-photo {
+    float: left;
+    padding: 5px 20px 0 0;
+}
+/*
+====================
+Portfolio
+====================
+*/
+.columns {
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 220px 2;
+    float: left;
+}
+.game {
+    padding-top: 100px;
+    margin-bottom: 30px; 
+    height: 150px;
+    width: 200px;
+    background-color: #ffffff;
+}
+#game1 {
+    background-image: url("../images/blades.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#game2 {
+    background-image: url("../assets/images/drop.jpg");
+}
+#game3 {
+    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/flower.jpg");
+}
+#game4 {
+    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/sunset.jpg");
+}
+#game5 {
+    background-image: url("/Users/alexandrawilson/Desktop/code/Basic-Portfolio/assets/images/surf.jpg");
+}   
+.game-title {
+    height: 25%;
+    width: 100%;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+}
+/*
+====================
+Sticky Footer
+====================
+*/
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1 0 auto;
+}
 .footer {
     height: 70px;
-    border-top: 10px solid #4aaaa5;
+    border-top: 8px solid #4aaaa5;
     background-color: #666666;
     text-align: center;
+    flex-shrink: 0;
 }
 .copyright {
-    color: #cccccc;
+    color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     display: inline-block;
     margin-top: 50px;
