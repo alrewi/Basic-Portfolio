@@ -6,7 +6,7 @@ Fixed Header
 .main-header {
     background-color: #ffffff;
     border-bottom: 2px solid #cccccc;
-    height: 88px;
+    height: 64px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,7 +19,8 @@ Fixed Header
 .logo {
     background-color: #4aaaa5;
     color: #ffffff;
-    padding: 20px;
+    padding: 20px 0 20px 0;
+    text-align: center;
     font-size: 24px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-decoration: none;
@@ -29,7 +30,7 @@ Fixed Header
 }
 .nav-bar {
     float: left;
-    margin: 27px 0 27px 0;
+    margin: 25px 0 25px 0;
     width: 140px;
 }
 .nav-but {
@@ -42,20 +43,19 @@ Fixed Header
     border-right: 1px solid #dddddd;
     padding-right: 5px;
 }
-
 /*
 ====================
 Main Content Area
 ====================
 */
 .container {
-    background: url("../images/skulls.png");
+    background-image: url("../images/skulls.png");
 }
 .content-area {
     width: 960px;
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    padding: 0 20px 20px 20px;
+    padding: 20px;
     margin: 120px 180px 50px 180px;
 }
 .page-heading {
@@ -64,6 +64,7 @@ Main Content Area
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
     padding: 0 0 20px 0;
+    margin-bottom: 20px;
 }
 /*
 ====================
@@ -71,7 +72,7 @@ About Me
 ====================
 */
 #bio {
-    line-height: 1.5;
+    line-height: 2;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
@@ -84,19 +85,14 @@ About Me
 Portfolio
 ====================
 */
-.columns {
-    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
-    -moz-columns: 100px 3; /* Firefox */
-    columns: 220px 2;
-    float: left;
-}
 .game {
     padding-top: 100px;
-    margin-bottom: 30px; 
     height: 150px;
     width: 200px;
     background-color: #ffffff;
     background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px;
 }
 #game1 {
     background-image: url("../images/blades.jpg");
@@ -117,9 +113,13 @@ Portfolio
     height: 25%;
     width: 100%;
     background-color: #4aaaa5;
-    color: #ffffff;
     text-align: center;
     padding-top: 18px;
+}
+.game-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 /*
 ====================
@@ -130,9 +130,19 @@ Contact
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
+.form-input {
+    width: 920px;
+}
+#form-message {
+    width: 920px;
+    height: 300px;
+}
 #submit-btn {
     background-color: #4aaaa5;
     color: #ffffff;
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
 }
 /*
 ====================
