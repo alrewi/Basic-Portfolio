@@ -72,13 +72,13 @@ About Me
 ====================
 */
 #bio {
-    line-height: 2;
+    line-height: 1.5;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
 #my-photo {
     float: left;
-    padding: 5px 20px 0 0;
+    margin-right: 20px;
 }
 /*
 ====================
